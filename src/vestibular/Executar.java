@@ -25,9 +25,23 @@ public class Executar {
 				System.out.println("digite o nome");
 				candidato.setNome(sc.nextLine());
 
-				candidatos.add(candidato);
+				
 
-				pr.println(candidato.getNome());
+				//.println(candidato.getNome());
+
+				Avaliacao avaliacao = null;
+
+				for (int j = 0; j < 1; j++) {
+
+					avaliacao = new Avaliacao();
+					System.out.println("digite todas as letras da prova");
+					avaliacao.setTeste(sc.nextLine());
+
+					candidato.getAvaliacoes().add(avaliacao);
+				}
+				
+				candidatos.add(candidato);
+				pr.println(candidato.getNome() + candidato.getAvaliacoes().toString());
 
 			}
 
@@ -58,7 +72,7 @@ public class Executar {
 				if (linha != null) {
 					String[] palavras = linha.split(";");
 
-					System.out.println("=========================================");
+					System.out.println("=======================   *    ========================");
 					for (int i = 0; i < palavras.length; i++) {
 						System.out.println("palavras lida = " + palavras[i]);
 

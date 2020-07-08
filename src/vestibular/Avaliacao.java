@@ -20,4 +20,10 @@ public class Avaliacao {
 		this.acerto = acerto;
 	}
 
+	@Override
+	public String toString() {
+		return "teste=" + teste + ", acerto=" + acerto ;
+	}
+	
+
 }
