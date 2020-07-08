@@ -1,3 +1,3 @@
-[vestibular.Candidato@16b98e56]
-[vestibular.Candidato@16b98e56, vestibular.Candidato@7ef20235]
-[vestibular.Candidato@16b98e56, vestibular.Candidato@7ef20235, vestibular.Candidato@27d6c5e0]
+maria
+joao
+antonio

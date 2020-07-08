@@ -27,7 +27,7 @@ public class Executar {
 
 				candidatos.add(candidato);
 
-				pr.println(candidatos);
+				pr.println(candidato.getNome());
 
 			}
 
