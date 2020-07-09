@@ -7,7 +7,9 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+
 import java.util.Scanner;
+
 
 public class Executar {
 
@@ -15,6 +17,9 @@ public class Executar {
 		Scanner sc = new Scanner(System.in);
 		Candidato candidato = null;
 		List<Candidato> candidatos = new ArrayList<Candidato>();
+		
+		
+		
 
 		try {
 			FileOutputStream arquivo = new FileOutputStream("resposta.txt");
@@ -24,6 +29,8 @@ public class Executar {
 				candidato = new Candidato();
 				System.out.println("digite o nome");
 				candidato.setNome(sc.nextLine());
+				System.out.println("digite o id");
+				candidato.setNumero(Integer.valueOf(sc.nextLine()));
 
 				
 
@@ -42,6 +49,7 @@ public class Executar {
 				
 				candidatos.add(candidato);
 				pr.println(candidato.getNome() + candidato.getAvaliacoes().toString());
+				
 
 			}
 
@@ -85,6 +93,8 @@ public class Executar {
 		} catch (Exception e) {
 			System.out.println("erro ao ler o arquivo!");
 		}
+		
+		
 
 		sc.close();
 

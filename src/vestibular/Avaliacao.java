@@ -1,8 +1,20 @@
 package vestibular;
 
-public class Avaliacao {
+public class Avaliacao implements Comparable<Avaliacao>{
 	private String teste;
-	private int acerto = 0;
+	
+	private String gabarito;
+
+	
+
+
+	public String getGabarito() {
+		return gabarito;
+	}
+
+	public void setGabarito(String gabarito) {
+		this.gabarito = gabarito;
+	}
 
 	public String getTeste() {
 		return teste;
@@ -12,18 +24,16 @@ public class Avaliacao {
 		this.teste = teste;
 	}
 
-	public int getAcerto() {
-		return acerto;
-	}
-
-	public void setAcerto(int acerto) {
-		this.acerto = acerto;
-	}
 
 	@Override
 	public String toString() {
-		return "teste=" + teste + ", acerto=" + acerto ;
+		return "teste=" + teste + "  ---->";
 	}
+
+	@Override
+	public int compareTo(Avaliacao other) {
 	
+		return 0;
+	}
 
 }
